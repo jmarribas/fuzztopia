@@ -64,6 +64,7 @@
   border: none;
   font-size: 16px;
   color: black;
+  cursor: pointer;
 }
 
 .modalContent > ul > li {
