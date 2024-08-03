@@ -45,7 +45,7 @@ export default function Releases() {
             priority
           />
           <div>
-            <p><strong>Single: </strong>Miedo a camibiar</p>
+            <p><strong>Single: </strong>Miedo a cambiar</p>
             <p><strong>Disponible en: </strong>Todas las plataformas digitales</p>
           </div>
         </div>
