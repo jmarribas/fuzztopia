@@ -28,9 +28,9 @@ export default function MenuModal({ isOpen, onClose }) {
   return (
     <div className={styles.modal}>
       <div className={`${styles.modalContent} ${isClosing ? styles.closing : ''}`}>
-        <button className={styles.closeButton} onClick={handleClose}>
-          X Cerrar
-        </button>
+        <div className={styles.closeButton} onClick={handleClose}>
+          CERRAR
+        </div>
         <ul className={styles.menuItems}>
           <li>
             <a href="#historysection" onClick={handleClose}>
