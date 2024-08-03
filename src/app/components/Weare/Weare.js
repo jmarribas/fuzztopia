@@ -26,7 +26,7 @@ export default function Weare() {
           alt="Edu"
           width={300}
           height={442}
-          priority
+          loading="lazy"
           onLoad={handleImageLoad}
         />
         <Image
@@ -35,7 +35,6 @@ export default function Weare() {
           alt="Logo Somos"
           width={600}
           height={466}
-          priority
           onLoad={handleImageLoad}
         />
         <h2>
@@ -51,7 +50,7 @@ export default function Weare() {
           alt="Jose"
           width={300}
           height={442}
-          priority
+          loading="lazy"
           onLoad={handleImageLoad}
         />
         <Image
@@ -60,7 +59,6 @@ export default function Weare() {
           alt="Logo Somos"
           width={600}
           height={466}
-          priority
           onLoad={handleImageLoad}
         />
         <h2>
@@ -76,7 +74,7 @@ export default function Weare() {
           alt="Richard"
           width={300}
           height={442}
-          priority
+          loading="lazy"
           onLoad={handleImageLoad}
         />
         <Image
@@ -85,7 +83,6 @@ export default function Weare() {
           alt="Logo Somos"
           width={600}
           height={466}
-          priority
           onLoad={handleImageLoad}
         />
         <h2>
@@ -101,7 +98,7 @@ export default function Weare() {
           alt="Jonathan"
           width={300}
           height={442}
-          priority
+          loading="lazy"
           onLoad={handleImageLoad}
         />
         <Image
@@ -110,7 +107,6 @@ export default function Weare() {
           alt="Logo Somos"
           width={600}
           height={466}
-          priority
           onLoad={handleImageLoad}
         />
         <h2>
