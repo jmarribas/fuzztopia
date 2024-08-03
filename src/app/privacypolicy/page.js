@@ -30,13 +30,13 @@ export default function PrivacyPolicy() {
           </li>
           <li>
             <p><strong><span >Afiliado</span></strong><span >&nbsp;significa una entidad que controla,
-              es controlada por o está bajo control común con una parte, donde "control" significa propiedad del 50% o
+              es controlada por o está bajo control común con una parte, donde &quot;control&quot; significa propiedad del 50% o
               más de las acciones, participación patrimonial u otros valores con derecho a voto para la elección de
               directores u otra autoridad administrativa.</span></p>
           </li>
           <li>
             <p><strong><span >La empresa</span></strong><span >&nbsp;(a la que en este Acuerdo se hace
-              referencia como "la empresa", "nosotros", "nos" o "nuestro") se refiere a Fuzztopía.</span></p>
+              referencia como &quot;la empresa&quot;, &quot;nosotros&quot;, &quot;nos&quot; o &quot;nuestro&quot;) se refiere a Fuzztopía.</span></p>
           </li>
           <li>
             <p><strong><span >Las cookies</span></strong><span >&nbsp;son pequeños archivos que un sitio
@@ -128,7 +128,7 @@ export default function PrivacyPolicy() {
             correo electrónico y para otras estadísticas relacionadas con el sitio web (por ejemplo, registrar la
             popularidad de una determinada sección y verificar la integridad del sistema y del servidor).</span></li>
         </ul>
-        <p><span >Las cookies pueden ser "persistentes" o "de sesión". Las cookies persistentes permanecen en su
+        <p><span >Las cookies pueden ser &quot;persistentes&quot; o &quot;de sesión&quot;. Las cookies persistentes permanecen en su
           computadora personal o dispositivo móvil cuando se desconecta, mientras que las cookies de sesión se
           eliminan tan pronto como cierra su navegador web. Obtenga más información sobre las cookies en el
           artículo&nbsp;</span><a
@@ -317,7 +317,7 @@ export default function PrivacyPolicy() {
         <p><span >Es posible que actualicemos nuestra Política de privacidad de vez en cuando. Le notificaremos
           cualquier cambio publicando la nueva Política de privacidad en esta página.</span></p>
         <p><span >Le informaremos por correo electrónico y/o un aviso destacado en nuestro Servicio, antes de
-          que el cambio entre en vigencia y actualizaremos la fecha de "Última actualización" en la parte superior de
+          que el cambio entre en vigencia y actualizaremos la fecha de &quot;Última actualización&quot; en la parte superior de
           esta Política de privacidad.</span></p>
         <p><span >Se recomienda revisar periódicamente esta Política de privacidad para comprobar si se han
           producido cambios. Los cambios a esta Política de privacidad entran en vigor cuando se publican en esta

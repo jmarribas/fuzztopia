@@ -7,6 +7,8 @@ export default function Releases() {
   const imageRef = useRef(null);
 
   useEffect(() => {
+    const currentImageRef = imageRef.current;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -18,13 +20,13 @@ export default function Releases() {
       { threshold: 0.1 }
     );
 
-    if (imageRef.current) {
-      observer.observe(imageRef.current);
+    if (currentImageRef) {
+      observer.observe(currentImageRef);
     }
 
     return () => {
-      if (imageRef.current) {
-        observer.unobserve(imageRef.current);
+      if (currentImageRef) {
+        observer.unobserve(currentImageRef);
       }
     };
   }, []);
