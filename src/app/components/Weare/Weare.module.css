@@ -1,0 +1,146 @@
+.weare {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px 15px 15px;
+  margin-top: -30px;
+  position: relative;
+}
+
+.weare::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(134,233,242,0) 0%, #ffef0a93 50%, rgba(134,233,242,0) 100%);
+  pointer-events: none;
+}
+
+.weareEdu > h2,
+.weareEdu > h3 {
+  animation: fadeIn 0.8s ease-in-out;
+  text-align: center;
+}
+
+.weareJose > h2,
+.weareJose > h3 {
+  animation: fadeIn 0.8s ease-in-out 0.2s forwards;
+  text-align: center;
+}
+
+.weareRichard > h2,
+.weareRichard > h3 {
+  animation: fadeIn 0.8s ease-in-out 0.4s forwards;
+  text-align: center;
+}
+
+.weareJonathan > h2,
+.weareJonathan > h3 {
+  animation: fadeIn 0.8s ease-in-out 0.6s forwards;
+  text-align: center;
+}
+.weareEdu,
+.weareJose,
+.weareRichard,
+.weareJonathan {
+  position: relative;
+}
+
+.weareEdu > .logoSomos,
+.weareJose > .logoSomos,
+.weareRichard > .logoSomos,
+.weareJonathan > .logoSomos {
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: -150px;
+  opacity: 0.2;
+  animation: identifier 2s ease-in-out;
+  filter: drop-shadow(0 0 30px #ffee0a);
+  transform: scale(0.45);
+}
+
+@keyframes identifier {
+  0% {
+    transform: scale(0.1);
+    opacity: 1;
+    z-index: 10;
+  }
+  40% {
+    transform: scale(0.1);
+    opacity: 1;
+    z-index: 10;
+  }
+  70% {
+    transform: scale(0.15);
+    opacity: 1;
+    z-index: 10;
+  }
+  80% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.45);
+  }  
+}
+
+.weareEdu > img,
+.weareJose > img,
+.weareRichard > img,
+.weareJonathan > img {
+  animation: blur 0.3s ease-in-out;
+  animation-delay: 1.4s;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(5px);
+  }
+}
+
+.weareJose h2,
+.weareEdu h2,
+.weareRichard h2,
+.weareJonathan h2 {
+  color: var(--color-primary);
+  font-size: 20px;
+  background: rgb(134,233,242);
+background: linear-gradient(94deg, rgba(134,233,242,0) 0%, rgba(0,0,0,1) 50%, rgba(134,233,242,0) 100%);
+  padding: 10px;
+  margin-top: -4px;
+  z-index: 50;
+}
+.weareJose h3,
+.weareEdu h3,
+.weareRichard h3,
+.weareJonathan h3 {
+  color: whitesmoke;
+  padding: 5px;
+  font-size: 16px;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform:scale(1)
+  }
+  10% {
+    transform:scale(1.03)
+  }
+  40% {
+    transform:scale(0.97)
+  }
+  70% {
+    transform:scale(1.02)
+  }
+  100% {
+    transform:scale(1)
+
+  }
+}

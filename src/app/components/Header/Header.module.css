@@ -1,0 +1,149 @@
+.header {
+  width: 100%;
+  height: 250px;
+}
+
+.logo {
+  display: flex;
+  position: relative;
+  width: 300px;
+  height: 220px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: -40px;
+}
+
+.raices {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.06;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.06;
+  }
+}
+
+.social {
+  position: absolute;
+  display: flex;
+  gap: 30px;
+  top: 180px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social > a {
+  cursor: auto;
+}
+
+.social > a > img {
+  opacity: 0;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.social > a > img:hover {
+  transform: scale(1.15) !important;
+  filter: drop-shadow(#ffef0aa0 0px 0px 5px);
+}
+
+.social > a:nth-child(1) > img {
+  animation: intro 0.8s ease-in-out forwards;
+}
+
+.social > a:nth-child(2) > img {
+  margin-top: 25px;
+  animation: intro 0.8s ease-in-out 0.2s forwards;
+}
+
+.social > a:nth-child(3) > img {
+  margin-top: 25px;
+  animation: intro 0.8s ease-in-out 0.4s forwards;
+}
+
+.social > a:nth-child(4) > img {
+  animation: intro 0.8s ease-in-out 0.6s forwards;
+}
+
+@keyframes intro {
+  0% {
+    transform: scale(0);
+    opacity: 0
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  90% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.nav {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  color: var(--color-secundary);
+  z-index: 50;
+}
+
+.nav::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(134,233,242,0) 0%, #ffef0a93 50%, rgba(134,233,242,0) 100%);
+  pointer-events: none;
+}
+
+.nav > a {
+  font-size: 17px;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav > a:hover {
+  color: var(--color-primary);
+  border-bottom: var(--color-primary) 0.5px solid;
+}
+
+.nav > span {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .nav > a {
+    display: none;
+  }
+
+  .nav > span {
+    display: block;
+    color: var(--color-secundary);
+    font-size: 35px;
+    cursor: pointer;
+  }
+}

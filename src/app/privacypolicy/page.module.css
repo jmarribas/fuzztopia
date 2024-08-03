@@ -1,0 +1,37 @@
+.privacypolicy {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  padding: 30px;
+}
+
+.privacypolicy > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 200;
+  text-align: justify;
+}
+
+.privacypolicy h1 {
+  color: var(--color-primary);
+}
+
+.privacypolicy h2 {
+  color: var(--color-secundary);
+}
+
+.privacypolicy > a {
+  color: var(--color-primary);
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+  width: 100px;
+  margin: 20px auto 0 auto;
+  transition: 0.3s;
+}
+
+.privacypolicy > a:hover {
+  color: var(--color-secundary);
+}
