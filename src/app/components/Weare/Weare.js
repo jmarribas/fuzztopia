@@ -1,9 +1,25 @@
+"use client"
+import { useEffect, useState } from 'react';
 import styles from "./Weare.module.css";
 import Image from "next/image";
 
 export default function Weare() {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [loadedCount, setLoadedCount] = useState(0);
+  const totalImages = 8;
+
+  useEffect(() => {
+    if (loadedCount === totalImages) {
+      setImagesLoaded(true);
+    }
+  }, [loadedCount]);
+
+  const handleImageLoad = () => {
+    setLoadedCount((prevCount) => prevCount + 1);
+  };
+
   return (
-    <section className={styles.weare} id="wearesection">
+    <section className={`${styles.weare} ${imagesLoaded ? styles.imagesLoaded : ''}`} id="wearesection">
       <div className={styles.weareEdu}>
         <Image
           src="/somos/Edu.webp"
@@ -11,6 +27,7 @@ export default function Weare() {
           width={300}
           height={442}
           priority
+          onLoad={handleImageLoad}
         />
         <Image
           src="/somos/logoSomos.webp"
@@ -19,6 +36,7 @@ export default function Weare() {
           width={600}
           height={466}
           priority
+          onLoad={handleImageLoad}
         />
         <h2>
           Eduardo Martín
@@ -34,6 +52,7 @@ export default function Weare() {
           width={300}
           height={442}
           priority
+          onLoad={handleImageLoad}
         />
         <Image
           src="/somos/logoSomos.webp"
@@ -42,6 +61,7 @@ export default function Weare() {
           width={600}
           height={466}
           priority
+          onLoad={handleImageLoad}
         />
         <h2>
           Jose Fernandez
@@ -57,6 +77,7 @@ export default function Weare() {
           width={300}
           height={442}
           priority
+          onLoad={handleImageLoad}
         />
         <Image
           src="/somos/logoSomos.webp"
@@ -65,6 +86,7 @@ export default function Weare() {
           width={600}
           height={466}
           priority
+          onLoad={handleImageLoad}
         />
         <h2>
           Richard Muñoz
@@ -80,6 +102,7 @@ export default function Weare() {
           width={300}
           height={442}
           priority
+          onLoad={handleImageLoad}
         />
         <Image
           src="/somos/logoSomos.webp"
@@ -88,6 +111,7 @@ export default function Weare() {
           width={600}
           height={466}
           priority
+          onLoad={handleImageLoad}
         />
         <h2>
           Jonathan Muñoz
